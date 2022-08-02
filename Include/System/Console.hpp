@@ -10,5 +10,15 @@ namespace System
         {
             std::cout << String << std::endl;
         }
+
+        // This Property Reads A Line Of Console And Return Its
+        static std::string ReadLine(void)
+        {
+            std::string String;
+
+            std::getline(std::cin , String);
+
+            return String;
+        }
     };
 }
