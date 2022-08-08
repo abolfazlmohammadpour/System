@@ -7,7 +7,7 @@ namespace System
     {
     public: // Public Properties Of Convert Class
         // This Property Convert UpperCase String To LowerCase String
-        static std::string ToLowerCase(std::string String)
+        static inline std::string ToLowerCase(std::string String)
         {
             for (unsigned short int Counter = 0; Counter < String.length(); Counter++)
             {
@@ -18,7 +18,7 @@ namespace System
         }
 
         // This Property Convert LowerCase String To UpperCase String
-        static std::string ToUpperCase(std::string String)
+        static inline std::string ToUpperCase(std::string String)
         {
             for (unsigned short int Counter = 0; Counter < String.length(); Counter++)
             {
