@@ -8,12 +8,6 @@ namespace System
         typedef bool Boolean; // This DataType Is Same As <bool>
 
         typedef void Empty; // This DataType Is Same As <void>
-
-        typedef class Class; // This DataType Is Same As <class>
-
-        typedef struct Struct; // This DataType Is Same As <struct>
-
-        typedef union Union; // This DataType Is Same As <union>
         
         typedef std::string String; // This DataType Is Same As <std::string>
 
