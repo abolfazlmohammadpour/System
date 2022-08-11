@@ -6,21 +6,21 @@ namespace System
     {
     public: // Public Properties Of Console Class
         // This Property Prints String Of Input Argument In New Line Of Console
-        static inline void WriteLine(std::string String)
+        static inline Type::Empty WriteLine(Type::String String)
         {
             std::cout << String << std::endl;
         }
 
 		// This Property Prints String Of Input Argument In Console
-		static inline void Write(std::string String)
+		static inline Type::Empty Write(Type::String String)
 		{
 			std::cout << String;
 		}
 
         // This Property Reads A Line Of Console And Return Its
-        static inline std::string ReadLine(void)
+        static inline Type::String ReadLine(Type::Empty)
         {
-            std::string String;
+            Type::String String;
 
             std::getline(std::cin , String);
 
@@ -28,9 +28,9 @@ namespace System
         }
 		
 		// This Property Reads A String Without Space Of Console And Reaturn Its
-		static inline std::string Read(void)
+		static inline Type::String Read(Type::Empty)
 		{
-			std::string String;
+			Type::String String;
 			
 			std::cin >> String;
 
