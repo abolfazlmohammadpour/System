@@ -57,15 +57,6 @@ namespace System
                 return false;
         }
 
-        // This Property Convert A ShortInteger To Boolean
-        static inline bool ToBoolean(short int ShortInteger)
-        {
-            if (ShortInteger)
-                return true;
-            else
-                return false;
-        }
-
         // This Property Convert A SignedShortInteger To Boolean
         static inline bool ToBoolean(signed short int SignedShortInteger)
         {
@@ -79,15 +70,6 @@ namespace System
         static inline bool ToBoolean(unsigned short int UnsignedShortInteger)
         {
             if (UnsignedShortInteger)
-                return true;
-            else
-                return false;
-        }
-
-        // This Property Convert A Integer To Boolean
-        static inline bool ToBoolean(int Integer)
-        {
-            if (Integer)
                 return true;
             else
                 return false;
@@ -111,15 +93,6 @@ namespace System
                 return false;
         }
 
-        // This Property Convert A LongInteger To Boolean
-        static inline bool ToBoolean(long int LongInteger)
-        {
-            if (LongInteger)
-                return true;
-            else
-                return false;
-        }
-
         // This Property Convert A SignedLongInteger To Boolean
         static inline bool ToBoolean(signed long int SignedLongInteger)
         {
@@ -133,15 +106,6 @@ namespace System
         static inline bool ToBoolean(unsigned long int UnsignedLongInteger)
         {
             if (UnsignedLongInteger)
-                return true;
-            else
-                return false;
-        }
-
-        // This Property Convert A LongLongInteger To Boolean
-        static inline bool ToBoolean(long long int LongLongInteger)
-        {
-            if (LongLongInteger)
                 return true;
             else
                 return false;
