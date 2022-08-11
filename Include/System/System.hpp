@@ -1,4 +1,7 @@
-#include "./Console.hpp"
+#include <iostream>
+#include <cctype>
+
+#include "./Type.hpp"
 #include "./Convert.hpp"
 #include "./Color.hpp"
-#include "./Type.hpp"
+#include "./Console.hpp"
