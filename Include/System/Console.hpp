@@ -3,16 +3,18 @@ namespace System
     class Console
     {
     public: // Public Properties Of Console Class
-        // This Property Prints String Of Input Argument In New Line Of Console
-        static inline Type::Empty WriteLine(Type::String String)
+        // This Property Prints Data Of Input Argument In New Line Of Console
+        template <typename TypeName>
+        static inline Type::Empty WriteLine(TypeName Data)
         {
-            std::cout << String << std::endl;
+            std::cout << Data << std::endl;
         }
 
-		// This Property Prints String Of Input Argument In Console
-		static inline Type::Empty Write(Type::String String)
+		// This Property Prints DataType Of Input Argument In Console
+        template <typename TypeName>
+		static inline Type::Empty Write(TypeName Data)
 		{
-			std::cout << String;
+			std::cout << Data;
 		}
 
         // This Property Reads A Line Of Console And Return Its
