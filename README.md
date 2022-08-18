@@ -16,7 +16,7 @@ Download The Repository With Following Command
 
 Linking `Include/System/System.hpp` To Program
 
-```c
+```c++
 #include "./Include/System/System.hpp"
 
 using namespace System;
