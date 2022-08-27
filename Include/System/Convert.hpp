@@ -27,9 +27,16 @@ namespace System
 
         // This Property Convert A DataType To Boolean DataType
         template <typename TypeName>
-        static inline Type::Boolean ToBoolean(TypeName DataType)
+        static inline Type::Boolean ToBoolean(TypeName Data)
         {
-            return static_cast<bool>(DataType);
+            return static_cast<Type::Boolean>(Data);
+        }
+
+        // This Property Convert A DataType To String DataType
+        template <typename TypeName>
+        static inline Type::String ToString(TypeName Data)
+        {
+            return std::to_string(Data);
         }
     };
 }
