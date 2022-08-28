@@ -38,5 +38,54 @@ namespace System
         {
             return std::to_string(Data);
         }
+
+        // This Property Reverses A String And Returns It
+        static inline Type::String StringReverse(Type::String Data)
+        {
+            if (!(Data.length() % 2))
+            {
+                for (Type::UnsignedShortInteger Counter = 0, ReverseCounter = (Data.length() - 1);; Counter++, ReverseCounter--)
+                {
+                    if ((Counter + 1) == ReverseCounter)
+                    {
+                        Type::Character BackCharacter = Data[Counter];
+                        Type::Character NextCharacter = Data[ReverseCounter];
+
+                        Data[Counter] = NextCharacter;
+                        Data[ReverseCounter] = BackCharacter;
+
+                        break;
+                    }
+                    else
+                    {
+                        Type::Character BackCharacter = Data[Counter];
+                        Type::Character NextCharacter = Data[ReverseCounter];
+
+                        Data[Counter] = NextCharacter;
+                        Data[ReverseCounter] = BackCharacter;
+                    }
+                }
+            }
+            else
+            {
+                for (Type::UnsignedShortInteger Counter = 0, ReverseCounter = (Data.length() - 1);; Counter++, ReverseCounter--)
+                {
+                    if (Counter == ReverseCounter)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Type::Character BackCharacter = Data[Counter];
+                        Type::Character NextCharacter = Data[ReverseCounter];
+
+                        Data[Counter] = NextCharacter;
+                        Data[ReverseCounter] = BackCharacter;
+                    }
+                }
+            }
+
+            return Data;
+        }
     };
 }
