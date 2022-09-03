@@ -33,5 +33,29 @@ namespace System
         {
             free(Array);
         }
+
+        // This Property Returns An String That Is Contain Executable Output Of Array Of Input Argument
+        template <typename TypeName>
+        static inline Type::String ExecutableOutput(Type::UnsignedInteger ArrayLength, TypeName *Array)
+        {
+            Type::String ExecutableOutput = "";
+
+            ExecutableOutput += "{";
+            for (Type::UnsignedInteger Counter = 0; Counter < ArrayLength; Counter++)
+            {
+                if (Counter == (ArrayLength - 1))
+                {
+                    ExecutableOutput += Convert::ToString(Array[Counter]);
+                }
+                else
+                {
+                    ExecutableOutput += Convert::ToString(Array[Counter]);
+                    ExecutableOutput += ", ";
+                }
+            }
+            ExecutableOutput += "}";
+
+            return ExecutableOutput;
+        }
     };
 }
