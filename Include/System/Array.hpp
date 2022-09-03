@@ -1,0 +1,5 @@
+#include <cstdarg>
+
+class Array
+{
+};
