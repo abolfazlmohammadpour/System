@@ -6,9 +6,11 @@ This Repository Contains A System Namespace Same As System In C# For C++
 
 ### Step One
 
-Download The Repository With Following Command
+Download The Repository With Following Commands
 
 `git clone https://github.com/abolfazlmohammadpour/System.git`
+
+`git clone https://gitlab.com/abolfazlmohammadpour/System.git`
 
 ---
 
