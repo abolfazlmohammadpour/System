@@ -57,5 +57,33 @@ namespace System
 
             return ExecutableOutput;
         }
+
+        // This Property Returns Maximum Value Of A Numerical Array With Signed Integer Type
+        static inline Type::SignedInteger MaximumValueOfNumericalArray(Type::UnsignedInteger ArrayLength, Type::SignedInteger *Array)
+        {
+            Type::SignedInteger MaximumNumber = Array[0];
+
+            for (Type::UnsignedInteger Counter = 1; Counter < (ArrayLength); Counter++)
+            {
+                if (Array[Counter] > MaximumNumber)
+                    MaximumNumber = Array[Counter];
+            }
+
+            return MaximumNumber;
+        }
+
+        // This Property Returns Maximum Value Of A Numerical Array With Unsigned Integer Type
+        static inline Type::UnsignedInteger MaximumValueOfNumericalArray(Type::UnsignedInteger ArrayLength, Type::UnsignedInteger *Array)
+        {
+            Type::UnsignedInteger MaximumNumber = Array[0];
+
+            for (Type::UnsignedInteger Counter = 1; Counter < (ArrayLength); Counter++)
+            {
+                if (Array[Counter] > MaximumNumber)
+                    MaximumNumber = Array[Counter];
+            }
+
+            return MaximumNumber;
+        }
     };
 }

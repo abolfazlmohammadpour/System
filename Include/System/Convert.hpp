@@ -88,7 +88,7 @@ namespace System
             return Data;
         }
 
-        // This Property Convert A Decimal Signed Integer (-2147483647 <= X <= +2147483647) To Binary And Return It
+        // This Property Converts A Decimal Signed Integer (-2147483647 <= X <= 2147483647) To Binary And Return It
         static inline Type::String ToBinary(Type::SignedInteger DecimalNumber)
         {
             if (DecimalNumber < -2147483647 || DecimalNumber > 2147483647)
@@ -221,7 +221,7 @@ namespace System
             return Convert::StringReverse(Binary);
         }
 
-        // This Property Convert A Decimal Unsigned Integer (0 <= X <= 4294967295) To Binary And Return It
+        // This Property Converts A Decimal Unsigned Integer (0 <= X <= 4294967295) To Binary And Return It
         static inline Type::String ToBinary(Type::UnsignedInteger DecimalNumber)
         {
             if (DecimalNumber < (Type::UnsignedInteger)0 || DecimalNumber > (Type::UnsignedInteger)4294967295)
