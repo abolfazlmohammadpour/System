@@ -85,5 +85,33 @@ namespace System
 
             return MaximumNumber;
         }
+
+        // This Prperty Returns Minimum Value Of Numerical Array With Signed Integer Type
+        static inline Type::SignedInteger MinimumValueOfNumericalArray(Type::UnsignedInteger ArrayLength, Type::SignedInteger *Array)
+        {
+            Type::SignedInteger MinimumNumber = Array[0];
+
+            for (Type::UnsignedInteger Counter = 1; Counter < ArrayLength; Counter++)
+            {
+                if (Array[Counter] < MinimumNumber)
+                    MinimumNumber = Array[Counter];
+            }
+
+            return MinimumNumber;
+        }
+
+        // This Prperty Returns Minimum Value Of Numerical Array With Unsigned Integer Type
+        static inline Type::UnsignedInteger MinimumValueOfNumericalArray(Type::UnsignedInteger ArrayLength, Type::UnsignedInteger *Array)
+        {
+            Type::UnsignedInteger MinimumNumber = Array[0];
+
+            for (Type::UnsignedInteger Counter = 1; Counter < ArrayLength; Counter++)
+            {
+                if (Array[Counter] < MinimumNumber)
+                    MinimumNumber = Array[Counter];
+            }
+
+            return MinimumNumber;
+        }
     };
 }
