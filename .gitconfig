@@ -1,0 +1,15 @@
+[core]
+	editor = \"C:\\VisualStudioCode(VSCode)\\Microsoft VS Code\\bin\\code\" --wait
+
+[user]
+	name = ABOLFAZL MOHAMMADPOUR
+	age = 18
+	mobile = +989900671856
+	phone = +981142154893
+	email = abolfazlmohammadpourqaemshahr@gmail.com
+	location = Tehran
+
+[init]
+	defaultbranchname = main
+
+
