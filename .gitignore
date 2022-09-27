@@ -6,4 +6,4 @@ Source/*.h
 Source/*.cpp
 Source/*.hpp
 
-MakeFile
+Makefile
