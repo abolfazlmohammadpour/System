@@ -1,3 +1,9 @@
-Output
-Source
+Output/*.exe
+Output/*.out
+
+Source/*.c
+Source/*.h
+Source/*.cpp
+Source/*.hpp
+
 MakeFile
