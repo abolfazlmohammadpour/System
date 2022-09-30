@@ -113,5 +113,15 @@ namespace System
 
             return MinimumNumber;
         }
+
+        // This Property Merge The Array To Another Array
+        template <typename TypeName>
+        static inline Type::Empty MergeArray(Type::UnsignedInteger ArrayLength, TypeName *Array, TypeName *TargetArray)
+        {
+            for (Type::UnsignedInteger Counter = 0; Counter < ArrayLength; Counter++)
+            {
+                TargetArray[Counter] = Array[Counter];
+            }
+        }
     };
 }
